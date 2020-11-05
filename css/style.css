@@ -1,0 +1,261 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  padding: 1rem; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  padding: 3rem; }
+
+.heading-primary {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  width: 100%; }
+  .heading-primary--main--green {
+    font-size: 4.5rem;
+    color: #00e676; }
+  .heading-primary--main--blue {
+    font-size: 5rem;
+    color: #303f9f; }
+
+.heading-secondary {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-weight: 700;
+  display: inline-block;
+  color: #fff;
+  letter-spacing: 2px;
+  transition: all .4s; }
+  .heading-secondary:hover {
+    transform: scale(1.1);
+    text-shadow: .5rem; }
+
+.heading-tertiary {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center; }
+  .heading-tertiary__blue {
+    color: #303f9f; }
+  .heading-tertiary__green {
+    color: #00e676; }
+
+.paragraph {
+  font-size: 2rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-med {
+  margin-bottom: 4rem !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+
+.u-margin-top-med {
+  margin-top: 4rem !important;
+  padding-top: 5rem !important; }
+
+.btn, .btn:link, .btn:visited {
+  word-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 1.5rem 4rem;
+  border-radius: 20rem;
+  transition: all 0.4s;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem black;
+  /* xsirection offset , y-direction offset, blurr u want more the pix more color will blur,  rgb clolr in shadow*/ }
+
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem black; }
+
+.btn--green {
+  background-color: #00e676;
+  color: white;
+  font-weight: 600; }
+
+.btn--login, .btn--signup {
+  font-size: 1.5rem;
+  padding: 2rem; }
+
+.feature-box {
+  background-color: rgba(247, 247, 247, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform .3s;
+  height: 100%; }
+  .feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: .5rem;
+    color: #00e676; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+    box-shadow: 0rem 1rem 3rem black;
+    /* xsirection offset , y-direction offset, blurr u want more the pix more color will blur,  rgb clolr in shadow*/ }
+  .feature-box:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem black; }
+
+.form {
+  background-color: #00e676;
+  height: 100vh;
+  position: relative; }
+  .form__box {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    background-color: wheat;
+    padding: 3rem; }
+  .form__heading {
+    text-align: center;
+    padding: 2rem; }
+  .form__group:not(:last-child) {
+    margin: 2rem 0; }
+  .form__input {
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-bottom: 3px solid  transparent;
+    display: block;
+    transition: all .3s; }
+    .form__input:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      border-bottom: 3px solid #00e676; }
+    .form__input:focus:invalid {
+      border-bottom: 3px solid #ffb900; }
+    .form__input::-webkit-input-placeholder {
+      color: lightgray; }
+  .form__label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: .8rem;
+    margin-top: .7rem;
+    display: block;
+    transition: all .3s; }
+  .form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-3rem); }
+  .form__register {
+    text-align: center; }
+
+#map {
+  height: 40rem; }
+
+.background-color-heading {
+  background-image: linear-gradient(to right, rgba(0, 230, 118, 0.5), rgba(48, 63, 159, 0.9));
+  padding: 2rem 0rem; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) /2); }
+  .row .col-1-of-3 {
+    width: calc( (100% - (2 * 6rem ) )  / 3); }
+  .row .col-1-of-4 {
+    width: calc( (100% - (3 * 6rem ) )  / 4); }
+  .row .col-2-of-3 {
+    width: calc( (2* ( (100% - (2 * 6rem ) )  / 3)) + 6rem); }
+  .row .col-2-of-4 {
+    width: calc( ( 2*(100% - (3 * 6rem ) )  / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc( (3*( (100% - (3 * 6rem ) )  / 4)) + (2 *6rem)); }
+
+.header {
+  height: 85vh;
+  /* background-color: red; */
+  background-image: url("../img/Organize.png");
+  background-position: top;
+  background-size: cover;
+  position: relative; }
+  .header__logo-box {
+    padding: 2rem; }
+  .header__logo {
+    height: 5rem; }
+  .header__text-box {
+    position: absolute;
+    top: 25%;
+    left: 12%;
+    text-align: left; }
+
+.navigation--row {
+  width: 100%;
+  display: inline-block; }
+
+.navigation__nav {
+  width: 100%; }
+
+.navigation__list {
+  list-style: none;
+  float: right; }
+
+.navigation__item {
+  display: inline-block;
+  margin: 2.0rem; }
+
+.navigation__link:link, .navigation__link:visited {
+  text-decoration: none;
+  color: #303f9f;
+  font-weight: 510;
+  font-size: 1.7rem;
+  border-bottom: 2px solid transparent;
+  transition: all 0.4s; }
+  .navigation__link:link:not(.btn), .navigation__link:visited:not(.btn) {
+    padding: 1rem 0; }
+
+.navigation__link:hover, .navigation__link:active {
+  border-bottom: 2px solid #00e676; }
+  .navigation__link:hover:not(.btn), .navigation__link:active:not(.btn) {
+    padding: 1rem 0; }
+
+.section-about {
+  background-color: rgba(247, 247, 247, 0.8);
+  padding: 0rem 0rem 5rem 0; }
+  .section-about__para-box {
+    padding: 0rem 15rem; }
+  .section-about__para {
+    text-align: center; }
